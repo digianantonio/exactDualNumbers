@@ -164,7 +164,7 @@ data DualInterval = !Interval :+& !Interval
   deriving (Eq, Show)
 
 -- redefinition of function on dual intervals 
-toDI i = toI 1 :+& toI 0
+toDI i = toI i :+& toI 0
 
 multExp2DI (xa :+& xi) n =  multExp2I xa n :+&  multExp2I xi n
 
